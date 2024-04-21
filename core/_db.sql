@@ -1,0 +1,18 @@
+
+-- Table 생성
+CREATE TABLE products (
+`id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(255) DEFAULT '',
+`price` INTEGER UNSIGNED DEFAULT 0,
+`stock` INTEGER UNSIGNED DEFAULT 0,
+`created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+);
+
+-- 데이터 입력
+INSERT INTO products VALUES
+ ('대형텐트', 460000, 100)
+,('소형텐트', 260000, 200)
+,('중형텐트', 320000, 150)
+,('대형텐트', 460000, 100)
+,('그늘막' , 160000, 300 );
